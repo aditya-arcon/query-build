@@ -1,0 +1,148 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --button-medium-font-family: "Figtree", Helvetica;
+  --button-medium-font-size: 13px;
+  --button-medium-font-style: normal;
+  --button-medium-font-weight: 500;
+  --button-medium-letter-spacing: 0px;
+  --button-medium-line-height: normal;
+  --fourth-heading-large-font-family: "Roboto", Helvetica;
+  --fourth-heading-large-font-size: 18px;
+  --fourth-heading-large-font-style: normal;
+  --fourth-heading-large-font-weight: 700;
+  --fourth-heading-large-letter-spacing: 0px;
+  --fourth-heading-large-line-height: 26px;
+  --fourth-heading-medium-font-family: "Roboto", Helvetica;
+  --fourth-heading-medium-font-size: 16px;
+  --fourth-heading-medium-font-style: normal;
+  --fourth-heading-medium-font-weight: 700;
+  --fourth-heading-medium-letter-spacing: 0px;
+  --fourth-heading-medium-line-height: 16px;
+  --label-medium-font-family: "Figtree", Helvetica;
+  --label-medium-font-size: 13px;
+  --label-medium-font-style: normal;
+  --label-medium-font-weight: 500;
+  --label-medium-letter-spacing: 0px;
+  --label-medium-line-height: normal;
+  --normal-medium-font-family: "Roboto", Helvetica;
+  --normal-medium-font-size: 13px;
+  --normal-medium-font-style: normal;
+  --normal-medium-font-weight: 400;
+  --normal-medium-letter-spacing: 0px;
+  --normal-medium-line-height: 20px;
+  --normal-small-font-family: "Roboto", Helvetica;
+  --normal-small-font-size: 12px;
+  --normal-small-font-style: normal;
+  --normal-small-font-weight: 400;
+  --normal-small-letter-spacing: 0px;
+  --normal-small-line-height: 22px;
+  --subtitle-1-large-font-family: "Roboto", Helvetica;
+  --subtitle-1-large-font-size: 16px;
+  --subtitle-1-large-font-style: normal;
+  --subtitle-1-large-font-weight: 700;
+  --subtitle-1-large-letter-spacing: 0px;
+  --subtitle-1-large-line-height: 24px;
+  --subtitle-1-medium-font-family: "Roboto", Helvetica;
+  --subtitle-1-medium-font-size: 15px;
+  --subtitle-1-medium-font-style: normal;
+  --subtitle-1-medium-font-weight: 700;
+  --subtitle-1-medium-letter-spacing: 0px;
+  --subtitle-1-medium-line-height: 12px;
+  --subtitle-2-large-font-family: "Roboto", Helvetica;
+  --subtitle-2-large-font-size: 14px;
+  --subtitle-2-large-font-style: normal;
+  --subtitle-2-large-font-weight: 700;
+  --subtitle-2-large-letter-spacing: 0px;
+  --subtitle-2-large-line-height: 12px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
